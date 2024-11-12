@@ -28,191 +28,220 @@ if (isset($_SESSION['user_token'])) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
     <style>
         html, body {
-            height: 100%;
-            margin: 0;
-            font-family: 'Roboto', sans-serif;
-        }
-        body {
-            display: flex;
-            background-color: #f7f8fa;
-        }
-        .sidebar {
-            width: 250px;
-            height: 100vh;
-            background-color: #343a40;
-            padding: 20px;
-            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-            color: white;
-            position: fixed;
-            transition: width 0.3s, transform 0.3s;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .sidebar.hidden-mobile {
-            transform: translateX(-100%);
-        }
-        .sidebar.minimized {
-            width: 80px;
-        }
-        .sidebar h2 {
-            text-align: center;
-            margin-bottom: 30px;
-            transition: opacity 0.3s;
-        }
-        .sidebar.minimized h2 {
-            opacity: 0;
-        }
-        .sidebar a {
-            display: flex;
-            align-items: center;
-            padding: 15px;
-            color: #ddd;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-bottom: 10px;
-            transition: background-color 0.3s;
-            width: 100%;
-            justify-content: flex-start;
-        }
-        .sidebar a:hover {
-            background-color: #495057;
-            color: white;
-        }
-        .sidebar a.active {
-            background-color: #495057;
-            color: white;
-        }
-        .sidebar a i {
-            margin-right: 10px;
-        }
-        .sidebar.minimized a {
-            justify-content: center;
-        }
-        .sidebar.minimized a i {
-            margin-right: 0;
-        }
-        .sidebar.minimized a span {
-            display: none;
-        }
-        .sidebar .btn-danger {
-            width: 100%;
-            margin-top: auto;
-        }
-        .content {
-            margin-left: 250px;
-            padding: 20px;
-            width: calc(100% - 250px);
-            transition: margin-left 0.3s, width 0.3s;
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .content.minimized {
-            margin-left: 80px;
-            width: calc(100% - 80px);
-        }
-        .content-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-            flex-wrap: wrap;
-            width: 100%;
-        }
-        .content-container .container {
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            max-width: 900px;
-            width: 100%;
-        }
-        .img-fluid {
-            height: auto;
-            width: 100%;
-            max-width: 400px;
-            border-radius: 10px;
-        }
-        footer {
-            background-color: #343a40;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            position: fixed;
-            width: calc(100% - 250px);
-            bottom: 0;
-            left: 250px;
-            transition: left 0.3s, width 0.3s;
-        }
-        footer.minimized {
-            left: 80px;
-            width: calc(100% - 80px);
-        }
-        .sidebar img {
-            width: 80px;
-            margin-bottom: 20px;
-        }
-        .menu-toggle {
-            display: none;
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            background-color: #343a40;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            padding: 10px;
-            cursor: pointer;
-            z-index: 1100;
-        }
-        @media (max-width: 768px) {
-            .sidebar {
-                transform: translateX(-100%);
-                z-index: 1000;
-            }
-            .sidebar.visible {
-                transform: translateX(0);
-            }
-            .content {
-                margin-left: 0;
-                width: 100%;
-                padding: 15px;
-            }
-            footer {
-                left: 0;
-                width: 100%;
-            }
-            .menu-toggle {
-                display: block;
-            }
-            .content-container .container {
-                padding: 15px;
-            }
-            .img-fluid {
-                max-width: 100%;
-                height: auto;
-            }
-        }
-        .card {
-            margin-bottom: 20px;
-            cursor: pointer;
-            transition: transform 0.3s;
-            border: none;
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    display: flex;
+    background-color: #f7f8fa;
+}
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #343a40;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    color: white;
+    position: fixed;
+    transition: width 0.3s, transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sidebar.hidden-mobile {
+    transform: translateX(-100%);
+}
+.sidebar.minimized {
+    width: 80px;
+}
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    transition: opacity 0.3s;
+}
+.sidebar.minimized h2 {
+    opacity: 0;
+}
+.sidebar a {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: #ddd;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+    width: 100%;
+    justify-content: flex-start;
+}
+.sidebar a:hover {
+    background-color: #495057;
+    color: white;
+}
+.sidebar a.active {
+    background-color: #495057;
+    color: white;
+}
+.sidebar a i {
+    margin-right: 10px;
+}
+.sidebar.minimized a {
+    justify-content: center;
+}
+.sidebar.minimized a i {
+    margin-right: 0;
+}
+.sidebar.minimized a span {
+    display: none;
+}
+.sidebar .btn-danger {
+    width: 100%;
+    margin-top: auto;
+}
+.content {
+    margin-left: 250px;
+    padding: 40px 30px; /* Ajustei o padding para aumentar o espaçamento */
+    width: calc(100% - 250px);
+    transition: margin-left 0.3s, width 0.3s;
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Permitir que o conteúdo seja organizado em uma coluna */
+    align-items: center;
+}
+.content.minimized {
+    margin-left: 80px;
+    width: calc(100% - 80px);
+}
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.content-container .container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 900px;
+    width: 100%;
+    margin-bottom: 40px; /* Adicionado para melhorar o espaçamento entre containers */
+}
+.img-fluid {
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: calc(100% - 250px);
+    bottom: 0;
+    left: 250px;
+    transition: left 0.3s, width 0.3s;
+}
+footer.minimized {
+    left: 80px;
+    width: calc(100% - 80px);
+}
+.sidebar img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+.menu-toggle {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #343a40;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1100;
+}
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-100%);
+        z-index: 1000;
+    }
+    .sidebar.visible {
+        transform: translateX(0);
+    }
+    .content {
+        margin-left: 0;
+        width: 100%;
+        padding: 20px; /* Ajuste para melhor visualização em telas menores */
+    }
+    footer {
+        left: 0;
+        width: 100%;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    .content-container .container {
+        padding: 20px;
+    }
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+    }
+}
+.card {
+    margin-bottom: 30px; /* Aumentei o espaçamento entre os cartões */
+    cursor: pointer;
+    transition: transform 0.3s;
+    border: none;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .card:hover {
-            transform: scale(1.05);
-        }
-        .card img {
-            height: 200px;
-            object-fit: cover;
-        }
-        .modal-body {
-            text-align: left;
-        }
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+.card-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-top: 20px; /* Adiciona espaço entre a imagem e o título */
+}
+.card-text {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-top: 10px; /* Adiciona espaço entre o título e o texto */
+}
+.modal-body {
+    text-align: left;
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 50px; /* Adiciona mais espaço abaixo do título principal */
+    text-align: center; /* Garante que o título esteja sempre centralizado */
+}
+h5 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+    .textotitulo {
+        padding: 100px;
+    }
+
     </style>
 </head>
 <body>
@@ -238,7 +267,8 @@ if (isset($_SESSION['user_token'])) {
 </div>
 
 <div class="container">
-    <h1 class="text-center mb-5">CONHEÇA AS CSAs UPE – TRIÊNIO 2024-2026</h1>
+    <h2 class="text-center"><strong>CONHEÇA AS CSAs UPE – TRIÊNIO 2024-2026</strong></h2>
+
 
     
     <div class="row">
