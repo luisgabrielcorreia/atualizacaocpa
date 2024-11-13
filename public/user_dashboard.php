@@ -174,6 +174,21 @@ if (mysqli_num_rows($result) > 0) {
                     <p>Estamos felizes em ver você. Aqui estão suas atividades recentes.</p>
                 </div>
 
+                <div class="alert alert-dark">
+    <p>Olá!<br><br>
+    A Comissão Própria de Avaliação (CPA) da UPE está mais uma vez realizando sua consulta à comunidade acadêmica, objetivando a avaliação das ações propostas no Plano de Desenvolvimento Institucional (PDI) da Universidade. <br><br>
+    Nesta Edição 2024, o foco de avaliação são os eixos:<br>
+    <strong>Planejamento e Avaliação Institucional</strong><br>
+    <strong>Desenvolvimento Institucional</strong><br><br>
+    A Lei Geral de Proteção de Dados (Lei nº 13.709/2018) entrou em vigor. Uma das mudanças diz respeito à forma como são tratados os dados pessoais fornecidos às empresas, qualquer que seja a atividade. A CPA informa que os dados disponibilizados neste formulário serão de uso exclusivo da UPE.<br><br>
+    Desde já, ao preencher esse formulário, você autoriza e concorda que se faça uso dessas informações apenas para levantamento de dados e divulgação de informações, em site e em redes sociais, podendo ser utilizados, observando os princípios e as garantias estabelecidas pela Lei nº 13.709/2018.<br><br>
+    Caso não consiga acessar (ou responder) por alguma razão, favor comunicar a um dos integrantes da Comissão Setorial de Avaliação de sua Unidade. <br><br>
+    Sua opinião é muito importante para tornarmos esse questionário mais acessível!<br><br>
+    Atenciosamente,<br>
+    Comissão Própria de Avaliação
+    </p>
+</div>
+
                 <!-- Formulário de Afiliações para Usuários do Google -->
                 <?php if ($showAffiliationsForm): ?>
                     <div class="alert alert-danger mt-4">

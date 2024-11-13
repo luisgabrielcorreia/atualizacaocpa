@@ -180,15 +180,38 @@ body {
     margin: 15px 0;
 }
 
+.card-title {
+    font-size: 1.1rem;
+    color: #343a40;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%; /* Garante que o texto não ultrapasse a largura do card */
+}
+
 .card:hover {
     transform: scale(1.05);
 }
 
 .card img {
+    width: 100% !important;
+    height: 250px !important; /* Ajuste a altura conforme desejado */
+    object-fit: cover !important; /* Garante o ajuste da imagem dentro da área definida */
+    display: block;
+    aspect-ratio: 3 / 4; /* Define uma proporção para as imagens, ajuste conforme necessário */
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    height: 200px;
-    object-fit: cover;
+}
+
+.row .card {
+    width: 100%; /* Garante que os cards ocupem toda a largura da coluna */
+    max-width: 250px; /* Define uma largura máxima para uniformizar os cards */
+    height: 100%; /* Faz com que os cards ocupem a altura total da coluna */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribui o conteúdo de forma equilibrada */
+    margin: 0 auto; /* Centraliza os cards */
 }
 
 .card h5 {
@@ -328,7 +351,7 @@ footer.minimized {
                     <div class="card-body">
                         <h5 class="card-title">Anna Lúcia Miranda</h5>
                         <p class="card-text">Presidente</p>
-                        <p class="card-text"><strong>Poli</strong></p>
+                        <p class="card-text"><strong>POLI</strong></p>
                     </div>
                 </div>
             </div>
@@ -341,12 +364,12 @@ footer.minimized {
         <div class="row mb-4">
             <?php 
             $docentes = [
-                ["nome" => "Prof. Cláudia Mota", "cargo" => "Docente", "unidade" => "Arcoverde", "foto" => "claudiamotadocentearcoverde.jpg"],
-                ["nome" => "Prof. Eliana Santos", "cargo" => "Docente", "unidade" => "Fop", "foto" => "elianasantosdocentefop.jpeg"],
-                ["nome" => "Prof. Fábio Teixeira", "cargo" => "Docente", "unidade" => "Esef", "foto" => "fabioteixeiradocenteesef.jpeg"],
-                ["nome" => "Prof. Leozina Andrade", "cargo" => "Docente", "unidade" => "Fensg", "foto" => "leozinaandradedocentefensg.jpg"],
-                ["nome" => "Prof. Rita Muhle", "cargo" => "Docente", "unidade" => "Petrolina", "foto" => "ritamuhledocentepetrolina.jpg"],
-                ["nome" => "Prof. Mariane Sabino", "cargo" => "Docente", "unidade" => "Complexo Hospitalar", "foto" => "marianesabinodocentecpx.jpg"],
+                ["nome" => "Prof. Cláudia Mota", "cargo" => "Docente", "unidade" => "ARCOVERDE", "foto" => "claudiamotadocentearcoverde.jpg"],
+                ["nome" => "Prof. Eliana Santos", "cargo" => "Docente", "unidade" => "FOP", "foto" => "elianasantosdocentefop.jpeg"],
+                ["nome" => "Prof. Fábio Teixeira", "cargo" => "Docente", "unidade" => "ESEF", "foto" => "fabioteixeiradocenteesef.jpeg"],
+                ["nome" => "Prof. Leozina Andrade", "cargo" => "Docente", "unidade" => "FENSG", "foto" => "leozinaandradedocentefensg.jpg"],
+                ["nome" => "Prof. Rita Muhle", "cargo" => "Docente", "unidade" => "PETROLINA", "foto" => "ritamuhledocentepetrolina.jpg"],
+                ["nome" => "Prof. Mariane Sabino", "cargo" => "Docente", "unidade" => "COMPLEXO HOSPITALAR", "foto" => "marianesabinodocentecpx.jpg"],
             ];
             foreach ($docentes as $docente): ?>
                 <div class="col-md-4 col-sm-6 mb-4 d-flex align-items-stretch">
@@ -370,10 +393,15 @@ footer.minimized {
         <div class="row mb-4">
             <?php 
             $discentes = [
-                ["nome" => "Ana Clara", "cargo" => "Discente", "unidade" => "Salgueiro", "foto" => "anaclaradiscentesalgueiro.jpeg"],
+                ["nome" => "Ana Clara", "cargo" => "Discente", "unidade" => "SALGUEIRO", "foto" => "anaclaradiscentesalgueiro.jpeg"],
                 ["nome" => "Breno Pereira", "cargo" => "Discente", "unidade" => "FCM", "foto" => "brenopereiradiscentefcm.jpg"],
-                ["nome" => "Paula Lais", "cargo" => "Discente", "unidade" => "Ouricuri", "foto" => "paulalaisdiscenteouricuri.jpg"],
-                ["nome" => "Vitor Santos", "cargo" => "Discente", "unidade" => "Mata Norte", "foto" => "vitorsantosdiscentematanorte.jpg"],
+                ["nome" => "Paula Lais", "cargo" => "Discente", "unidade" => "OURICURI", "foto" => "paulalaisdiscenteouricuri.jpg"],
+                ["nome" => "Vitor Santos", "cargo" => "Discente", "unidade" => "MATA NORTE", "foto" => "vitorsantosdiscentematanorte.jpg"],
+                ["nome" => "Rayssa Carla", "cargo" => "Discente", "unidade" => "CARUARU", "foto" => "rayssasilvadiscentecaruaru.jpeg"],
+                ["nome" => "Lívia Mariane Lima", "cargo" => "Discente", "unidade" => "MATA SUL", "foto" => ".jpg"],
+                ["nome" => "Jóse Everson da Silva", "cargo" => "Discente", "unidade" => "SURUBIM", "foto" => ".jpg"],
+
+
             ];
             foreach ($discentes as $discente): ?>
                 <div class="col-md-4 col-sm-6 mb-4 d-flex align-items-stretch">
@@ -397,12 +425,16 @@ footer.minimized {
         <div class="row mb-4">
             <?php 
             $tecnicos = [
-                ["nome" => "Acayne Nascimento", "cargo" => "Técnico", "unidade" => "Reitoria", "foto" => "acaynenascimentotecnicoreitoria.jpeg"],
-                ["nome" => "Katia Freitas", "cargo" => "Técnicos", "unidade" => "Procape", "foto" => "katiafreitastecnicoprocape.jpeg"],
-                ["nome" => "Leyla Braga", "cargo" => "Técnico", "unidade" => "Garanhuns", "foto" => "leylabragatecnicogaranhuns.jpeg"],
+                ["nome" => "Acayne Nascimento", "cargo" => "Técnico", "unidade" => "REITORIA", "foto" => "acaynenascimentotecnicoreitoria.jpeg"],
+                ["nome" => "Katia Freitas", "cargo" => "Técnicos", "unidade" => "PROCAPE", "foto" => "katiafreitastecnicoprocape.jpeg"],
+                ["nome" => "Leyla Braga", "cargo" => "Técnico", "unidade" => "GARANHUNS", "foto" => "leylabragatecnicogaranhuns.jpeg"],
+                ["nome" => "Anna Mychelle", "cargo" => "Técnico", "unidade" => "ICB", "foto" => ".jpeg"],
+                ["nome" => "Fernanda Vasconcelos", "cargo" => "Técnico", "unidade" => "FCAP", "foto" => ".jpeg"],
+                ["nome" => "Fernanda Calixto", "cargo" => "Técnico", "unidade" => "HUOC", "foto" => ".jpeg"],
+                ["nome" => "Maria Djanete", "cargo" => "Técnico", "unidade" => "CISAM", "foto" => "mariadjanetetecnicacisam.jpeg"],
             ];
             foreach ($tecnicos as $tecnicos): ?>
-                <div class="col-md-4 col-sm-6 mb-4 d-flex align-items-stretch">
+               <div class="col-md-4 col-sm-6 mb-4 d-flex align-items-stretch">
                     <div class="card text-center">
                         <img src="imgs/<?= $tecnicos['foto'] ?>" class="card-img-top" alt="<?= $tecnicos['nome'] ?>">
                         <div class="card-body">
@@ -422,8 +454,8 @@ footer.minimized {
         <div class="row mb-4">
             <?php 
             $secti = [
-                ["nome" => "Kents Bonatti", "cargo" => "Secti", "unidade" => "", "foto" => "kentsbonattisecti.jpeg"],
-                ["nome" => "Marília Mesquita", "cargo" => "Secti", "unidade" => "", "foto" => "mariliamesquitasecti.jpg"],
+                ["nome" => "Kents Bonatti", "cargo" => "SECTI", "unidade" => "", "foto" => "kentsbonattisecti.jpeg"],
+                ["nome" => "Marília Mesquita", "cargo" => "SECTI", "unidade" => "", "foto" => "mariliamesquitasecti.jpg"],
             ];
             foreach ($secti as $secti): ?>
                 <div class="col-md-4 col-sm-6 mb-4 d-flex align-items-stretch">
@@ -447,7 +479,7 @@ footer.minimized {
         <div class="row mb-4">
             <?php 
             $sociedade_civil = [
-                ["nome" => "Edmilson da Silva", "cargo" => "Sociedade Civil", "foto" => "edmilsondasilvasociedadecivil.png"],
+                ["nome" => "Edmilson da Silva", "cargo" => "SOCIEDADE CIVIL", "foto" => "edmilsondasilvasociedadecivil.png"],
             ];
             foreach ($sociedade_civil as $membro): ?>
                 <div class="col-md-4 col-sm-6 mb-4 d-flex align-items-stretch">

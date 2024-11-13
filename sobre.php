@@ -36,6 +36,16 @@ body {
     display: flex;
     background-color: #f7f8fa;
 }
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-top: 40px; /* Espaço acima do título */
+    margin-bottom: 30px; /* Espaço abaixo do título */
+    text-align: center;
+}
+
 .sidebar {
     width: 250px;
     height: 100vh;
@@ -147,6 +157,21 @@ footer {
     left: 250px;
     transition: left 0.3s, width 0.3s;
 }
+
+.card-link {
+    display: block;
+    color: #6c757d; /* Cinza neutro */
+    font-size: 0.85rem;
+    text-align: center;
+    margin-top: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.card-link:hover {
+    color: #343a40; /* Escurece um pouco no hover para indicar clicável */
+}
 footer.minimized {
     left: 80px;
     width: calc(100% - 80px);
@@ -197,30 +222,43 @@ footer.minimized {
     }
 }
 .card {
-    margin-bottom: 30px; /* Aumentei o espaçamento entre os cartões */
     cursor: pointer;
-    transition: transform 0.3s;
+    max-width: 300px;
+    margin: 15px auto;
     border: none;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
+
 .card:hover {
     transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
+
 .card img {
-    height: 200px;
-    object-fit: cover;
+    width: 100%;
+    height: 350px; /* Aumenta a altura da imagem para um pouco mais de destaque */
+    object-fit: cover; /* Mantém o corte proporcional sem distorção */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
+
+.card-body {
+    padding: 10px 15px; /* Reduz o padding para minimizar espaço branco */
+}
+
 .card-title {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: bold;
     color: #343a40;
-    margin-top: 20px; /* Adiciona espaço entre a imagem e o título */
+    margin-bottom: 5px; /* Reduz o espaço abaixo do título */
 }
+
 .card-text {
     font-size: 1rem;
     color: #6c757d;
-    margin-top: 10px; /* Adiciona espaço entre o título e o texto */
+    margin-top: 5px; /* Ajuste para reduzir o espaço entre o título e o texto */
 }
 .modal-body {
     text-align: left;
@@ -279,6 +317,7 @@ h5 {
                 <div class="card-body">
                     <h5 class="card-title">Escola Politécnica de Pernambuco</h5>
                     <p class="card-text"><strong>Docente Principal:</strong> Anna Lúcia Miranda Costa (CPA)</p>
+                    <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
                 </div>
             </div>
         </div>
@@ -307,6 +346,8 @@ h5 {
                 <div class="card-body">
                     <h5 class="card-title">Instituto de Ciências Biológicas</h5>
                     <p class="card-text"><strong>Técnico-Administrativo Principal:</strong> Anna Michelle L. F. S. Santana (CPA)</p>
+                    <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+
                 </div>
             </div>
         </div>
@@ -335,6 +376,8 @@ h5 {
                 <div class="card-body">
                     <h5 class="card-title">Campus Mata Sul</h5>
                     <p class="card-text"><strong>Discente Principal:</strong> Lívia Mariane Lima dos Santos (CPA)</p>
+                    <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+
                 </div>
             </div>
         </div>
@@ -363,6 +406,7 @@ h5 {
                 <div class="card-body">
                     <h5 class="card-title">Faculdade de Enfermagem Nossa Senhora das Graças</h5>
                     <p class="card-text">Docente Principal: Leozina Barbosa de Andrade (CPA)</p>
+                    <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
                 </div>
             </div>
         </div>
@@ -387,10 +431,12 @@ h5 {
         <!-- Faculdade de Administração e Direito de Pernambuco -->
 <div class="col-md-4">
     <div class="card" data-toggle="modal" data-target="#modal5">
-        <img src="https://via.placeholder.com/400" class="card-img-top" alt="Luciana de Kassia Arruda da Silva">
+        <img src="imgs/lucianasilvatecnicafcap.png" class="card-img-top" alt="Luciana de Kassia Arruda da Silva">
         <div class="card-body">
             <h5 class="card-title">Faculdade de Administração e Direito de Pernambuco</h5>
             <p class="card-text">Técnico-Administrativo Principal: Luciana de Kassia Arruda da Silva (CPA)</p>
+            <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+
         </div>
     </div>
 </div>
@@ -419,6 +465,8 @@ h5 {
         <div class="card-body">
             <h5 class="card-title">Campus Mata Norte</h5>
             <p class="card-text">Discente Principal: Vítor Emanuel José dos Santos (CPA)</p>
+            <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+
         </div>
     </div>
 </div>
@@ -447,6 +495,8 @@ h5 {
         <div class="card-body">
             <h5 class="card-title">Campus Arcoverde</h5>
             <p class="card-text">Docente Principal: Cláudia Cristina Brainer de O. Mota (CPA)</p>
+            <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+
         </div>
     </div>
 </div>
@@ -475,6 +525,8 @@ h5 {
         <div class="card-body">
             <h5 class="card-title">Campus Garanhuns</h5>
             <p class="card-text">Técnico-Administrativo Principal: Esther Leyla da Silva B. Wanderley (CPA)</p>
+            <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+
         </div>
     </div>
 </div>
@@ -503,6 +555,8 @@ h5 {
         <div class="card-body">
             <h5 class="card-title">Campus Salgueiro</h5>
             <p class="card-text">Discente Principal: Ana Clara Alves Rocha (CPA)</p>
+            <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+
         </div>
     </div>
 </div>
@@ -531,6 +585,8 @@ h5 {
         <div class="card-body">
             <h5 class="card-title">Campus Petrolina</h5>
             <p class="card-text">Docente Principal: Rita Paradeda Muhle (CPA)</p>
+            <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+
         </div>
     </div>
 </div>
@@ -559,6 +615,8 @@ h5 {
         <div class="card-body">
             <h5 class="card-title">Reitoria</h5>
             <p class="card-text">Técnico-Administrativo Principal: Acayne Uluri B. do Nascimento (CPA)</p>
+            <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+
         </div>
     </div>
 </div>
@@ -585,6 +643,8 @@ h5 {
         <div class="card-body">
             <h5 class="card-title">Faculdade de Ciências Médicas</h5>
             <p class="card-text">Discente Principal: Breno Pereira Teixeira (CPA)</p>
+            <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+
         </div>
     </div>
 </div>
@@ -613,6 +673,8 @@ h5 {
         <div class="card-body">
             <h5 class="card-title">Escola Superior de Educação Física</h5>
             <p class="card-text">Docente Principal: Fabio Luis Santos Teixeira (CPA)</p>
+            <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+
         </div>
     </div>
 </div>
@@ -641,6 +703,8 @@ h5 {
         <div class="card-body">
             <h5 class="card-title">Proto-Socorro Cardiológico Universitário de Pernambuco</h5>
             <p class="card-text">Técnico-Administrativo Principal: Kátia Cristina de S.N. Freitas da Silva (CPA)</p>
+            <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+
         </div>
     </div>
 </div>
@@ -663,10 +727,12 @@ h5 {
 <!-- Campus Ouricuri -->
 <div class="col-md-4">
     <div class="card" data-toggle="modal" data-target="#modal11">
-        <img src="https://via.placeholder.com/400" class="card-img-top" alt="Paula Laís Borges de Carvalho">
+        <img src="imgs/paulalaisdiscenteouricuri.jpg" class="card-img-top" alt="Paula Laís Borges de Carvalho">
         <div class="card-body">
             <h5 class="card-title">Campus Ouricuri</h5>
             <p class="card-text">Discente Principal: Paula Laís Borges de Carvalho (CPA)</p>
+            <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+
         </div>
     </div>
 </div>
@@ -695,6 +761,8 @@ h5 {
         <div class="card-body">
             <h5 class="card-title">Faculdade de Odontologia de Pernambuco</h5>
             <p class="card-text">Docente Principal: Eliana Santos Lyra da Paz (CPA)</p>
+            <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+
         </div>
     </div>
 </div>
@@ -723,6 +791,8 @@ h5 {
         <div class="card-body">
             <h5 class="card-title">Hospital Universitário Oswaldo Cruz</h5>
             <p class="card-text">Técnico-Administrativo Principal: Fernanda Calixto do Prado Van Agt (CPA)</p>
+            <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+
         </div>
     </div>
 </div>
@@ -745,10 +815,12 @@ h5 {
 <!-- Campus Caruaru -->
 <div class="col-md-4">
     <div class="card" data-toggle="modal" data-target="#modal14">
-        <img src="https://via.placeholder.com/400" class="card-img-top" alt="Raysa Carla Leal da Silva">
+        <img src="imgs/rayssasilvadiscentecaruaru.jpeg" class="card-img-top" alt="Rayssa Carla Leal da Silva">
         <div class="card-body">
             <h5 class="card-title">Campus Caruaru</h5>
             <p class="card-text">Discente Principal: Raysa Carla Leal da Silva (CPA)</p>
+            <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+
         </div>
     </div>
 </div>
@@ -777,6 +849,8 @@ h5 {
         <div class="card-body">
             <h5 class="card-title">Campus Serra Talhada</h5>
             <p class="card-text">Docente Principal: Antônio Wilton Cavalcante Fernandes (CPA)</p>
+            <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+
         </div>
     </div>
 </div>
@@ -801,10 +875,12 @@ h5 {
 <!-- Centro Universitário Integrado de Saúde Amaury Medeiros -->
 <div class="col-md-4">
     <div class="card" data-toggle="modal" data-target="#modal20">
-        <img src="https://via.placeholder.com/400" class="card-img-top" alt="Maria Djaneete de Oliveira">
+        <img src="imgs/mariadjanetetecnicacisam.jpeg" class="card-img-top" alt="Maria Djaneete de Oliveira">
         <div class="card-body">
             <h5 class="card-title">Centro Universitário Integrado de Saúde Amaury Medeiros</h5>
-            <p class="card-text">Técnico Principal: Maria Djaneete de Oliveira (CPA)</p>
+            <p class="card-text">Técnico Principal: Maria Djanete de Oliveira (CPA)</p>
+            <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+
         </div>
     </div>
 </div>
@@ -832,6 +908,8 @@ h5 {
         <div class="card-body">
             <h5 class="card-title">Campus Surubim</h5>
             <p class="card-text">Discente Principal: José Everson da Silva Santos (CPA)</p>
+            <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+
         </div>
     </div>
 </div>
@@ -860,6 +938,8 @@ h5 {
         <div class="card-body">
             <h5 class="card-title">Superintendência do Complexo Hospitalar</h5>
             <p class="card-text">Docente Principal: Marianne Regina Araújo Sabino (CPA)</p>
+            <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+
         </div>
     </div>
 </div>
@@ -887,6 +967,8 @@ h5 {
         <div class="card-body">
             <h5 class="card-title">Secretaria de Ciência, Tecnologia e Inovação de Pernambuco</h5>
             <p class="card-text">Principal: Kents Bonatti Maziero (CPA)</p>
+            <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+
         </div>
     </div>
 </div>
@@ -914,6 +996,8 @@ h5 {
         <div class="card-body">
             <h5 class="card-title">Sociedade Civil</h5>
             <p class="card-text">Principal: Edmilson José Da Silva (CPA)</p>
+            <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+
         </div>
     </div>
 </div>
@@ -932,8 +1016,6 @@ h5 {
         </div>
     </div>
 </div>
-
-        <!-- Adicione os demais cards aqui seguindo o mesmo formato -->
 
     </div>
 </div>
