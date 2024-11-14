@@ -317,7 +317,7 @@ h5 {
                 <div class="card-body">
                     <h5 class="card-title">Escola Politécnica de Pernambuco</h5>
                     <p class="card-text"><strong>Docente Principal:</strong> Anna Lúcia Miranda Costa (CPA)</p>
-                    <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+                    <span class="card-link">Clique para conhecer os membros</span>
                 </div>
             </div>
         </div>
@@ -346,7 +346,7 @@ h5 {
                 <div class="card-body">
                     <h5 class="card-title">Instituto de Ciências Biológicas</h5>
                     <p class="card-text"><strong>Técnico-Administrativo Principal:</strong> Anna Michelle L. F. S. Santana (CPA)</p>
-                    <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+                    <span class="card-link">Clique para conhecer os membros</span>
 
                 </div>
             </div>
@@ -376,7 +376,7 @@ h5 {
                 <div class="card-body">
                     <h5 class="card-title">Campus Mata Sul</h5>
                     <p class="card-text"><strong>Discente Principal:</strong> Lívia Mariane Lima dos Santos (CPA)</p>
-                    <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+                    <span class="card-link">Clique para conhecer os membros</span>
 
                 </div>
             </div>
@@ -406,7 +406,7 @@ h5 {
                 <div class="card-body">
                     <h5 class="card-title">Faculdade de Enfermagem Nossa Senhora das Graças</h5>
                     <p class="card-text">Docente Principal: Leozina Barbosa de Andrade (CPA)</p>
-                    <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+                    <span class="card-link">Clique para conhecer os membros</span>
                 </div>
             </div>
         </div>
@@ -435,7 +435,7 @@ h5 {
         <div class="card-body">
             <h5 class="card-title">Faculdade de Administração e Direito de Pernambuco</h5>
             <p class="card-text">Técnico-Administrativo Principal: Luciana de Kassia Arruda da Silva (CPA)</p>
-            <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+            <span class="card-link">Clique para conhecer os membros</span>
 
         </div>
     </div>
@@ -460,21 +460,21 @@ h5 {
 
 <!-- Campus Mata Norte -->
 <div class="col-md-4">
-    <div class="card" data-toggle="modal" data-target="#modal5">
+    <div class="card" data-toggle="modal" data-target="#modal6">
         <img src="imgs/vitorsantosdiscentematanorte.jpg" class="card-img-top" alt="Vítor Emanuel José dos Santos">
         <div class="card-body">
             <h5 class="card-title">Campus Mata Norte</h5>
             <p class="card-text">Discente Principal: Vítor Emanuel José dos Santos (CPA)</p>
-            <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+            <span class="card-link">Clique para conhecer os membros</span>
 
         </div>
     </div>
 </div>
-<div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="modalLabel5" aria-hidden="true">
+<div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="modalLabel6" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalLabel5">Campus Mata Norte - Comissão</h5>
+                <h5 class="modal-title" id="modalLabel6">Campus Mata Norte - Comissão</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -490,21 +490,21 @@ h5 {
 
 <!-- Campus Arcoverde -->
 <div class="col-md-4">
-    <div class="card" data-toggle="modal" data-target="#modal5">
+    <div class="card" data-toggle="modal" data-target="#modal7">
         <img src="imgs/claudiamotadocentearcoverde.jpg" class="card-img-top" alt="Cláudia Cristina Brainer de O. Mota">
         <div class="card-body">
             <h5 class="card-title">Campus Arcoverde</h5>
             <p class="card-text">Docente Principal: Cláudia Cristina Brainer de O. Mota (CPA)</p>
-            <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+            <span class="card-link">Clique para conhecer os membros</span>
 
         </div>
     </div>
 </div>
-<div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="modalLabel5" aria-hidden="true">
+<div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="modalLabel7" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalLabel5">Campus Arcoverde - Comissão</h5>
+                <h5 class="modal-title" id="modalLabel7">Campus Arcoverde - Comissão</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -520,21 +520,21 @@ h5 {
 
 <!-- Campus Garanhuns -->
 <div class="col-md-4">
-    <div class="card" data-toggle="modal" data-target="#modal5">
+    <div class="card" data-toggle="modal" data-target="#modal8">
         <img src="imgs/leylabragatecnicogaranhuns.jpeg" class="card-img-top" alt="Esther Leyla da Silva B. Wanderley">
         <div class="card-body">
             <h5 class="card-title">Campus Garanhuns</h5>
             <p class="card-text">Técnico-Administrativo Principal: Esther Leyla da Silva B. Wanderley (CPA)</p>
-            <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+            <span class="card-link">Clique para conhecer os membros</span>
 
         </div>
     </div>
 </div>
-<div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="modalLabel5" aria-hidden="true">
+<div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="modalLabel8" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalLabel5">Campus Garanhuns - Comissão</h5>
+                <h5 class="modal-title" id="modalLabel8">Campus Garanhuns - Comissão</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -550,21 +550,21 @@ h5 {
 
 <!-- Campus Salgueiro -->
 <div class="col-md-4">
-    <div class="card" data-toggle="modal" data-target="#modal5">
+    <div class="card" data-toggle="modal" data-target="#modal9">
         <img src="imgs/anaclaradiscentesalgueiro.jpeg" class="card-img-top" alt="Ana Clara Alves Rocha">
         <div class="card-body">
             <h5 class="card-title">Campus Salgueiro</h5>
             <p class="card-text">Discente Principal: Ana Clara Alves Rocha (CPA)</p>
-            <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+            <span class="card-link">Clique para conhecer os membros</span>
 
         </div>
     </div>
 </div>
-<div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="modalLabel5" aria-hidden="true">
+<div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-labelledby="modalLabel9" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalLabel5">Campus Salgueiro - Comissão</h5>
+                <h5 class="modal-title" id="modalLabel9">Campus Salgueiro - Comissão</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -580,21 +580,21 @@ h5 {
 
 <!-- Campus Petrolina -->
 <div class="col-md-4">
-    <div class="card" data-toggle="modal" data-target="#modal6">
+    <div class="card" data-toggle="modal" data-target="#modal10">
         <img src="imgs/ritamuhledocentepetrolina.jpg" class="card-img-top" alt="Rita Paradeda Muhle">
         <div class="card-body">
             <h5 class="card-title">Campus Petrolina</h5>
             <p class="card-text">Docente Principal: Rita Paradeda Muhle (CPA)</p>
-            <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+            <span class="card-link">Clique para conhecer os membros</span>
 
         </div>
     </div>
 </div>
-<div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="modalLabel6" aria-hidden="true">
+<div class="modal fade" id="modal10" tabindex="-1" role="dialog" aria-labelledby="modalLabel10" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalLabel6">Campus Petrolina - Comissão</h5>
+                <h5 class="modal-title" id="modalLabel10">Campus Petrolina - Comissão</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -610,21 +610,21 @@ h5 {
 
 <!-- Reitoria -->
 <div class="col-md-4">
-    <div class="card" data-toggle="modal" data-target="#modal7">
+    <div class="card" data-toggle="modal" data-target="#modal11">
         <img src="imgs/acaynenascimentotecnicoreitoria.jpeg" class="card-img-top" alt="Acayne Uluri B. do Nascimento">
         <div class="card-body">
             <h5 class="card-title">Reitoria</h5>
             <p class="card-text">Técnico-Administrativo Principal: Acayne Uluri B. do Nascimento (CPA)</p>
-            <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+            <span class="card-link">Clique para conhecer os membros</span>
 
         </div>
     </div>
 </div>
-<div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="modalLabel7" aria-hidden="true">
+<div class="modal fade" id="modal11" tabindex="-1" role="dialog" aria-labelledby="modalLabel11" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalLabel7">Reitoria - Comissão</h5>
+                <h5 class="modal-title" id="modalLabel11">Reitoria - Comissão</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -638,21 +638,21 @@ h5 {
 
 <!-- Faculdade de Ciências Médicas -->
 <div class="col-md-4">
-    <div class="card" data-toggle="modal" data-target="#modal8">
+    <div class="card" data-toggle="modal" data-target="#modal12">
         <img src="imgs/brenopereiradiscentefcm.jpg" class="card-img-top" alt="Breno Pereira Teixeira">
         <div class="card-body">
             <h5 class="card-title">Faculdade de Ciências Médicas</h5>
             <p class="card-text">Discente Principal: Breno Pereira Teixeira (CPA)</p>
-            <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+            <span class="card-link">Clique para conhecer os membros</span>
 
         </div>
     </div>
 </div>
-<div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="modalLabel8" aria-hidden="true">
+<div class="modal fade" id="modal12" tabindex="-1" role="dialog" aria-labelledby="modalLabel12" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalLabel8">Faculdade de Ciências Médicas - Comissão</h5>
+                <h5 class="modal-title" id="modalLabel12">Faculdade de Ciências Médicas - Comissão</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -668,21 +668,21 @@ h5 {
 
 <!-- Escola Superior de Educação Física -->
 <div class="col-md-4">
-    <div class="card" data-toggle="modal" data-target="#modal9">
+    <div class="card" data-toggle="modal" data-target="#modal13">
         <img src="imgs/fabioteixeiradocenteesef.jpeg" class="card-img-top" alt="Fabio Luis Santos Teixeira">
         <div class="card-body">
             <h5 class="card-title">Escola Superior de Educação Física</h5>
             <p class="card-text">Docente Principal: Fabio Luis Santos Teixeira (CPA)</p>
-            <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+            <span class="card-link">Clique para conhecer os membros</span>
 
         </div>
     </div>
 </div>
-<div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-labelledby="modalLabel9" aria-hidden="true">
+<div class="modal fade" id="modal13" tabindex="-1" role="dialog" aria-labelledby="modalLabel13" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalLabel9">Escola Superior de Educação Física - Comissão</h5>
+                <h5 class="modal-title" id="modalLabel13">Escola Superior de Educação Física - Comissão</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -698,21 +698,21 @@ h5 {
 
 <!-- Proto-Socorro Cardiológico Universitário de Pernambuco -->
 <div class="col-md-4">
-    <div class="card" data-toggle="modal" data-target="#modal10">
+    <div class="card" data-toggle="modal" data-target="#modal14">
         <img src="imgs/katiafreitastecnicoprocape.jpeg" class="card-img-top" alt="Kátia Cristina de S.N. Freitas da Silva">
         <div class="card-body">
             <h5 class="card-title">Proto-Socorro Cardiológico Universitário de Pernambuco</h5>
             <p class="card-text">Técnico-Administrativo Principal: Kátia Cristina de S.N. Freitas da Silva (CPA)</p>
-            <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+            <span class="card-link">Clique para conhecer os membros</span>
 
         </div>
     </div>
 </div>
-<div class="modal fade" id="modal10" tabindex="-1" role="dialog" aria-labelledby="modalLabel10" aria-hidden="true">
+<div class="modal fade" id="modal14" tabindex="-1" role="dialog" aria-labelledby="modalLabel14" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalLabel10">Proto-Socorro Cardiológico Universitário de Pernambuco - Comissão</h5>
+                <h5 class="modal-title" id="modalLabel14">Proto-Socorro Cardiológico Universitário de Pernambuco - Comissão</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -726,7 +726,7 @@ h5 {
 
 <!-- Campus Ouricuri -->
 <div class="col-md-4">
-    <div class="card" data-toggle="modal" data-target="#modal11">
+    <div class="card" data-toggle="modal" data-target="#modal15">
         <img src="imgs/paulalaisdiscenteouricuri.jpg" class="card-img-top" alt="Paula Laís Borges de Carvalho">
         <div class="card-body">
             <h5 class="card-title">Campus Ouricuri</h5>
@@ -736,11 +736,11 @@ h5 {
         </div>
     </div>
 </div>
-<div class="modal fade" id="modal11" tabindex="-1" role="dialog" aria-labelledby="modalLabel11" aria-hidden="true">
+<div class="modal fade" id="modal15" tabindex="-1" role="dialog" aria-labelledby="modalLabel15" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalLabel11">Campus Ouricuri - Comissão</h5>
+                <h5 class="modal-title" id="modalLabel15">Campus Ouricuri - Comissão</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -756,7 +756,7 @@ h5 {
 
 <!-- Faculdade de Odontologia de Pernambuco -->
 <div class="col-md-4">
-    <div class="card" data-toggle="modal" data-target="#modal12">
+    <div class="card" data-toggle="modal" data-target="#modal16">
         <img src="imgs/elianasantosdocentefop.jpeg" class="card-img-top" alt="Eliana Santos Lyra da Paz">
         <div class="card-body">
             <h5 class="card-title">Faculdade de Odontologia de Pernambuco</h5>
@@ -766,11 +766,11 @@ h5 {
         </div>
     </div>
 </div>
-<div class="modal fade" id="modal12" tabindex="-1" role="dialog" aria-labelledby="modalLabel12" aria-hidden="true">
+<div class="modal fade" id="modal16" tabindex="-1" role="dialog" aria-labelledby="modalLabel16" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalLabel12">Faculdade de Odontologia de Pernambuco - Comissão</h5>
+                <h5 class="modal-title" id="modalLabel16">Faculdade de Odontologia de Pernambuco - Comissão</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -786,7 +786,7 @@ h5 {
 
 <!-- Hospital Universitário Oswaldo Cruz -->
 <div class="col-md-4">
-    <div class="card" data-toggle="modal" data-target="#modal13">
+    <div class="card" data-toggle="modal" data-target="#modal17">
         <img src="https://via.placeholder.com/400" class="card-img-top" alt="Fernanda Calixto do Prado Van Agt">
         <div class="card-body">
             <h5 class="card-title">Hospital Universitário Oswaldo Cruz</h5>
@@ -796,11 +796,11 @@ h5 {
         </div>
     </div>
 </div>
-<div class="modal fade" id="modal13" tabindex="-1" role="dialog" aria-labelledby="modalLabel13" aria-hidden="true">
+<div class="modal fade" id="modal17" tabindex="-1" role="dialog" aria-labelledby="modalLabel17" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalLabel13">Hospital Universitário Oswaldo Cruz - Comissão</h5>
+                <h5 class="modal-title" id="modalLabel17">Hospital Universitário Oswaldo Cruz - Comissão</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -814,7 +814,7 @@ h5 {
 
 <!-- Campus Caruaru -->
 <div class="col-md-4">
-    <div class="card" data-toggle="modal" data-target="#modal14">
+    <div class="card" data-toggle="modal" data-target="#modal18">
         <img src="imgs/rayssasilvadiscentecaruaru.jpeg" class="card-img-top" alt="Rayssa Carla Leal da Silva">
         <div class="card-body">
             <h5 class="card-title">Campus Caruaru</h5>
@@ -824,7 +824,7 @@ h5 {
         </div>
     </div>
 </div>
-<div class="modal fade" id="modal14" tabindex="-1" role="dialog" aria-labelledby="modalLabel14" aria-hidden="true">
+<div class="modal fade" id="modal18" tabindex="-1" role="dialog" aria-labelledby="modalLabel18" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -844,21 +844,21 @@ h5 {
 
 <!-- Campus Serra Talhada -->
 <div class="col-md-4">
-    <div class="card" data-toggle="modal" data-target="#modal15">
-        <img src="https://via.placeholder.com/400" class="card-img-top" alt="Antônio Wilton Cavalcante Fernandes">
+    <div class="card" data-toggle="modal" data-target="#modal19">
+        <img src="imgs/antonio.jpg" class="card-img-top" alt="Antônio Wilton Cavalcante Fernandes">
         <div class="card-body">
             <h5 class="card-title">Campus Serra Talhada</h5>
             <p class="card-text">Docente Principal: Antônio Wilton Cavalcante Fernandes (CPA)</p>
-            <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+            <span class="card-link"">Clique para conhecer os membros</span>
 
         </div>
     </div>
 </div>
-<div class="modal fade" id="modal15" tabindex="-1" role="dialog" aria-labelledby="modalLabel15" aria-hidden="true">
+<div class="modal fade" id="modal19" tabindex="-1" role="dialog" aria-labelledby="modalLabel19" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalLabel15">Campus Serra Talhada - Comissão</h5>
+                <h5 class="modal-title" id="modalLabel19">Campus Serra Talhada - Comissão</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -879,7 +879,7 @@ h5 {
         <div class="card-body">
             <h5 class="card-title">Centro Universitário Integrado de Saúde Amaury Medeiros</h5>
             <p class="card-text">Técnico Principal: Maria Djanete de Oliveira (CPA)</p>
-            <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+            <span class="card-link"">Clique para conhecer os membros</span>
 
         </div>
     </div>
@@ -903,21 +903,21 @@ h5 {
 
 <!-- Campus Surubim -->
 <div class="col-md-4">
-    <div class="card" data-toggle="modal" data-target="#modal16">
+    <div class="card" data-toggle="modal" data-target="#modal21">
         <img src="https://via.placeholder.com/400" class="card-img-top" alt="José Everson da Silva Santos">
         <div class="card-body">
             <h5 class="card-title">Campus Surubim</h5>
             <p class="card-text">Discente Principal: José Everson da Silva Santos (CPA)</p>
-            <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+            <span class="card-link"">Clique para conhecer os membros</span>
 
         </div>
     </div>
 </div>
-<div class="modal fade" id="modal16" tabindex="-1" role="dialog" aria-labelledby="modalLabel16" aria-hidden="true">
+<div class="modal fade" id="modal21" tabindex="-1" role="dialog" aria-labelledby="modalLabel21" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalLabel16">Campus Surubim - Comissão</h5>
+                <h5 class="modal-title" id="modalLabel21">Campus Surubim - Comissão</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -933,21 +933,21 @@ h5 {
 
 <!-- Superintendência do Complexo Hospitalar -->
 <div class="col-md-4">
-    <div class="card" data-toggle="modal" data-target="#modal17">
+    <div class="card" data-toggle="modal" data-target="#modal22">
         <img src="imgs/marianesabinodocentecpx.jpg" class="card-img-top" alt="Marianne Regina Araújo Sabino">
         <div class="card-body">
             <h5 class="card-title">Superintendência do Complexo Hospitalar</h5>
             <p class="card-text">Docente Principal: Marianne Regina Araújo Sabino (CPA)</p>
-            <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
+            <span class="card-link"">Clique para conhecer os membros</span>
 
         </div>
     </div>
 </div>
-<div class="modal fade" id="modal17" tabindex="-1" role="dialog" aria-labelledby="modalLabel17" aria-hidden="true">
+<div class="modal fade" id="modal22" tabindex="-1" role="dialog" aria-labelledby="modalLabel22" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalLabel17">Superintendência do Complexo Hospitalar - Comissão</h5>
+                <h5 class="modal-title" id="modalLabel22">Superintendência do Complexo Hospitalar - Comissão</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -960,91 +960,57 @@ h5 {
     </div>
 </div>
 
-<!-- Secretaria de Ciência, Tecnologia e Inovação de Pernambuco -->
-<div class="col-md-4">
-    <div class="card" data-toggle="modal" data-target="#modal18">
-        <img src="imgs/kentsbonattisecti.jpeg" class="card-img-top" alt="Kenys Bonatti Maziero">
-        <div class="card-body">
-            <h5 class="card-title">Secretaria de Ciência, Tecnologia e Inovação de Pernambuco</h5>
-            <p class="card-text">Principal: Kents Bonatti Maziero (CPA)</p>
-            <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
-
-        </div>
-    </div>
-</div>
-<div class="modal fade" id="modal18" tabindex="-1" role="dialog" aria-labelledby="modalLabel18" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalLabel18">Secretaria de Ciência, Tecnologia e Inovação de Pernambuco - Comissão</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p><strong>Principal:</strong> Kenys Bonatti Maziero (CPA)</p>
-                <p><strong>Membro:</strong> Marília Mesquita de Amorim Figueiredo</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Sociedade Civil -->
-<div class="col-md-4">
-    <div class="card" data-toggle="modal" data-target="#modal19">
-        <img src="imgs/edmilsondasilvasociedadecivil.png" class="card-img-top" alt="Edmilson José Da Silva">
-        <div class="card-body">
-            <h5 class="card-title">Sociedade Civil</h5>
-            <p class="card-text">Principal: Edmilson José Da Silva (CPA)</p>
-            <span class="card-link" data-toggle="modal" data-target="#modal1">Clique para conhecer os membros</span>
-
-        </div>
-    </div>
-</div>
-<div class="modal fade" id="modal19" tabindex="-1" role="dialog" aria-labelledby="modalLabel19" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalLabel19">Sociedade Civil - Comissão</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p><strong>Principal:</strong> Edmilson José Da Silva (CPA)</p>
-            </div>
-        </div>
-    </div>
-</div>
-
     </div>
 </div>
     <!-- Modal de Login -->
-    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form action="config/login.php" method="POST">
-                        <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Senha:</label>
-                            <input type="password" class="form-control" id="password" name="password" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Login</button>
-                    </form>
-                </div>
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="config/login.php" method="POST">
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Senha:</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+                    <!-- Link de Esqueceu a Senha -->
+                    <div class="text-center mt-3 mb-4">
+                        <button type="button" class="btn btn-link" onclick="openForgotPasswordModal()">
+                            Esqueceu sua senha?
+                        </button>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Login</button>
+                </form>
             </div>
         </div>
     </div>
+</div>
+
+<!-- Modal de Esqueceu a Senha -->
+<div class="modal fade" id="forgotPasswordModal" tabindex="-1" role="dialog" aria-labelledby="forgotPasswordModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="forgotPasswordModalLabel">Esqueceu sua senha?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Para redefinir sua senha, envie um e-mail para <strong>cpa@upe.br</strong> com o assunto "Recuperação de Senha". Nossa equipe entrará em contato para ajudá-lo a redefinir sua senha.</p>
+            </div>
+        </div>
+    </div>
+</div>
 
     <!-- Modal de Registro -->
     <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
@@ -1058,7 +1024,7 @@ h5 {
                 </div>
                 <div class="modal-body">
                     <p class="modal-dialog" style="color: #ff0000"><strong>Importante:</strong> Registre-se, preferencialmente, usando seu e-mail institucional.</p>
-                    <form action="config/register.php" method="POST">
+                    <form id="registerForm" action="config/register.php" method="POST">
                         <div class="form-group">
                             <label for="full_name">Nome completo:</label>
                             <input type="text" class="form-control" id="full_name" name="full_name" required>
@@ -1076,10 +1042,11 @@ h5 {
                             <input type="checkbox" name="afiliacoes[]" value="Docente"> Docente<br>
                             <input type="checkbox" name="afiliacoes[]" value="Discente"> Discente<br>
                             <input type="checkbox" name="afiliacoes[]" value="Servidores Técnico-Administrativos"> Servidores Técnico-Administrativos<br>
-                            <input type="checkbox" name="afiliacoes[]" value="Estudante"> Estudante<br>
                             <input type="checkbox" name="afiliacoes[]" value="Egresso"> Egresso<br>
+                            <small style="color: #ff0000" id="affiliationError"></small>
                         </div>
                         <button type="submit" class="btn btn-primary">Registrar</button>
+                        <div id="registerError" style="color: #ff0000; margin-top: 10px;"></div> <!-- Div para exibir o erro -->
                     </form>
                 </div>
             </div>
@@ -1099,6 +1066,52 @@ h5 {
             });
         });
     </script>
+    <script>
+    function openForgotPasswordModal() {
+        $('#loginModal').modal('hide'); // Fecha o modal de login
+        $('#forgotPasswordModal').modal('show'); // Abre o modal de "Esqueceu a Senha"
+    }
+</script>
+    <script>
+        document.getElementById("registerForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+
+            // Validação de afiliações
+            const checkboxes = document.querySelectorAll('input[name="afiliacoes[]"]');
+            let selected = false;
+
+            checkboxes.forEach((checkbox) => {
+                if (checkbox.checked) {
+                    selected = true;
+                }
+            });
+
+            if (!selected) {
+                document.getElementById("affiliationError").innerText = "Por favor, selecione pelo menos uma afiliação.";
+                return;
+            } else {
+                document.getElementById("affiliationError").innerText = "";
+            }
+
+            // Preparação do AJAX
+            const formData = new FormData(document.getElementById("registerForm"));
+            fetch("config/register.php", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.json()) // Converte a resposta para JSON
+            .then(data => {
+                if (data.status === "error") {
+                    document.getElementById("registerError").innerText = data.message; // Exibe a mensagem de erro
+                } else if (data.status === "success") {
+                    window.location.href = "public/user_dashboard.php"; // Redireciona em caso de sucesso
+                }
+            })
+            .catch(error => {
+                document.getElementById("registerError").innerText = "Erro ao processar o registro. Tente novamente.";
+            });
+        });
+        </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>

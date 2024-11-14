@@ -313,13 +313,32 @@ footer.minimized {
     padding-left: 10px; /* Menor recuo para o submenu na versão minimizada */
 }
 
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.sidebar-logo {
+    width: 80px; /* Tamanho padrão das logos */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.logo-cpa {
+    width: 120px; /* Tamanho maior para a logo da CPA */
+}
 
     </style>
 </head>
 <body>
     <button class="menu-toggle" id="menuToggle"><i class="bi bi-list"></i></button>
     <div class="sidebar" id="sidebar">
-    <img src="imgs/upe.png" alt="logo-upe">
+    <div class="logo-container">
+    <img src="imgs/upe.png" alt="logo-upe" class="sidebar-logo">
+    <img src="imgs/logocpareal-semfundo.png" alt="logo-cpa" class="sidebar-logo logo-cpa">
+</div>
     <a href="index.php" class="active"><i class="bi bi-people"></i> <span>MEMBROS CPA 2024-2026</span></a>
     <a href="sobre.php"><i class="bi bi-people"></i> <span>MEMBROS CSAs 2024-2026</span></a>
     <!-- Botão do menu dobrável -->
@@ -499,31 +518,54 @@ footer.minimized {
 
 
     <!-- Modal de Login -->
-    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form action="config/login.php" method="POST">
-                        <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Senha:</label>
-                            <input type="password" class="form-control" id="password" name="password" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Login</button>
-                    </form>
-                </div>
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="config/login.php" method="POST">
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Senha:</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+                    <!-- Link de Esqueceu a Senha -->
+                    <div class="text-center mt-3 mb-4">
+                        <button type="button" class="btn btn-link" onclick="openForgotPasswordModal()">
+                            Esqueceu sua senha?
+                        </button>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Login</button>
+                </form>
             </div>
         </div>
     </div>
+</div>
+
+<!-- Modal de Esqueceu a Senha -->
+<div class="modal fade" id="forgotPasswordModal" tabindex="-1" role="dialog" aria-labelledby="forgotPasswordModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="forgotPasswordModalLabel">Esqueceu sua senha?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Para redefinir sua senha, envie um e-mail para <strong>cpa@upe.br</strong> com o assunto "Recuperação de Senha". Nossa equipe entrará em contato para ajudá-lo a redefinir sua senha.</p>
+            </div>
+        </div>
+    </div>
+</div>
 
     <!-- Modal de Registro -->
     <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
@@ -578,6 +620,12 @@ footer.minimized {
                 document.getElementById('footer').classList.toggle('minimized');
             });
         });
+    </script>
+    <script>
+        function openForgotPasswordModal() {
+            $('#loginModal').modal('hide'); // Fecha o modal de login
+            $('#forgotPasswordModal').modal('show'); // Abre o modal de "Esqueceu a Senha"
+        }
     </script>
     <script>
         document.getElementById("registerForm").addEventListener("submit", function(event) {

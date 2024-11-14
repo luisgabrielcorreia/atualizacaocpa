@@ -253,28 +253,49 @@ if (isset($_SESSION['user_token'])) {
 
     <!-- Modal de Login -->
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <div class="modal-header bg-primary text-white">
+            <div class="modal-header">
                 <h5 class="modal-title" id="loginModalLabel">Login</h5>
-                <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
                 <form action="config/login.php" method="POST">
-                    <div class="form-group mb-3">
-                        <label for="email" class="form-label">Email</label>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
                         <input type="email" class="form-control" id="email" name="email" required>
                     </div>
-                    <div class="form-group mb-3">
-                        <label for="password" class="form-label">Senha</label>
+                    <div class="form-group">
+                        <label for="password">Senha:</label>
                         <input type="password" class="form-control" id="password" name="password" required>
                     </div>
-                    <div class="d-grid">
-                        <button type="submit" class="btn btn-primary btn-block">Login</button>
+                    <!-- Link de Esqueceu a Senha -->
+                    <div class="text-center mt-3 mb-4">
+                        <button type="button" class="btn btn-link" onclick="openForgotPasswordModal()">
+                            Esqueceu sua senha?
+                        </button>
                     </div>
+                    <button type="submit" class="btn btn-primary w-100">Login</button>
                 </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal de Esqueceu a Senha -->
+<div class="modal fade" id="forgotPasswordModal" tabindex="-1" role="dialog" aria-labelledby="forgotPasswordModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="forgotPasswordModalLabel">Esqueceu sua senha?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Para redefinir sua senha, envie um e-mail para <strong>cpa@upe.br</strong> com o assunto "Recuperação de Senha". Nossa equipe entrará em contato para ajudá-lo a redefinir sua senha.</p>
             </div>
         </div>
     </div>
@@ -291,48 +312,32 @@ if (isset($_SESSION['user_token'])) {
                 </button>
             </div>
             <div class="modal-body">
-                <p class="text-danger"><strong>Importante:</strong> Registre-se, preferencialmente, usando seu e-mail institucional.</p>
-                <form action="config/register.php" method="POST">
-                    <div class="form-group mb-3">
-                        <label for="full_name" class="form-label">Nome completo</label>
-                        <input type="text" class="form-control" id="full_name" name="full_name" required>
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="password" class="form-label">Senha</label>
-                        <input type="password" class="form-control" id="password" name="password" required>
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="afiliacoes" class="form-label">Afiliações</label><br>
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" name="afiliacoes[]" value="Docente">
-                            <label class="form-check-label" for="afiliacao1">Docente</label>
+                    <p class="modal-dialog" style="color: #ff0000"><strong>Importante:</strong> Registre-se, preferencialmente, usando seu e-mail institucional.</p>
+                    <form id="registerForm" action="config/register.php" method="POST">
+                        <div class="form-group">
+                            <label for="full_name">Nome completo:</label>
+                            <input type="text" class="form-control" id="full_name" name="full_name" required>
                         </div>
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" name="afiliacoes[]" value="Discente">
-                            <label class="form-check-label" for="afiliacao2">Discente</label>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
                         </div>
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" name="afiliacoes[]" value="Servidores Técnico-Administrativos">
-                            <label class="form-check-label" for="afiliacao3">Servidores Técnico-Administrativos</label>
+                        <div class="form-group">
+                            <label for="password">Senha:</label>
+                            <input type="password" class="form-control" id="password" name="password" required>
                         </div>
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" name="afiliacoes[]" value="Estudante">
-                            <label class="form-check-label" for="afiliacao4">Estudante</label>
+                        <div class="form-group">
+                            <label for="afiliacoes">Afiliações:</label><br>
+                            <input type="checkbox" name="afiliacoes[]" value="Docente"> Docente<br>
+                            <input type="checkbox" name="afiliacoes[]" value="Discente"> Discente<br>
+                            <input type="checkbox" name="afiliacoes[]" value="Servidores Técnico-Administrativos"> Servidores Técnico-Administrativos<br>
+                            <input type="checkbox" name="afiliacoes[]" value="Egresso"> Egresso<br>
+                            <small style="color: #ff0000" id="affiliationError"></small>
                         </div>
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" name="afiliacoes[]" value="Egresso">
-                            <label class="form-check-label" for="afiliacao5">Egresso</label>
-                        </div>
-                    </div>
-                    <div class="d-grid">
-                        <button type="submit" class="btn btn-primary btn-block">Registrar</button>
-                    </div>
-                </form>
-            </div>
+                        <button type="submit" class="btn btn-primary">Registrar</button>
+                        <div id="registerError" style="color: #ff0000; margin-top: 10px;"></div> <!-- Div para exibir o erro -->
+                    </form>
+                </div>
         </div>
     </div>
 </div>
@@ -350,6 +355,52 @@ if (isset($_SESSION['user_token'])) {
             });
         });
     </script>
+    <script>
+    function openForgotPasswordModal() {
+        $('#loginModal').modal('hide'); // Fecha o modal de login
+        $('#forgotPasswordModal').modal('show'); // Abre o modal de "Esqueceu a Senha"
+    }
+</script>
+    <script>
+        document.getElementById("registerForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+
+            // Validação de afiliações
+            const checkboxes = document.querySelectorAll('input[name="afiliacoes[]"]');
+            let selected = false;
+
+            checkboxes.forEach((checkbox) => {
+                if (checkbox.checked) {
+                    selected = true;
+                }
+            });
+
+            if (!selected) {
+                document.getElementById("affiliationError").innerText = "Por favor, selecione pelo menos uma afiliação.";
+                return;
+            } else {
+                document.getElementById("affiliationError").innerText = "";
+            }
+
+            // Preparação do AJAX
+            const formData = new FormData(document.getElementById("registerForm"));
+            fetch("config/register.php", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.json()) // Converte a resposta para JSON
+            .then(data => {
+                if (data.status === "error") {
+                    document.getElementById("registerError").innerText = data.message; // Exibe a mensagem de erro
+                } else if (data.status === "success") {
+                    window.location.href = "public/user_dashboard.php"; // Redireciona em caso de sucesso
+                }
+            })
+            .catch(error => {
+                document.getElementById("registerError").innerText = "Erro ao processar o registro. Tente novamente.";
+            });
+        });
+        </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
